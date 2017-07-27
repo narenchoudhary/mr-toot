@@ -107,7 +107,7 @@ def get_proxy_pass(packet):
     """
     if packet.haslayer(Raw):
         raw_load = packet.getlayer(Raw).load
-        proxy = re.search(r"Proxy-Authorization: Basic (.*)\r", raw_load)
+        proxy = re.search(b"Proxy-Authorization: Basic (.*)\r", raw_load)
         if proxy and proxy.group(1):
             proxy_user, proxy_pass = base64.standard_b64decode(proxy.group(1)).split(':')
             PROXY_USER_PASS.add((proxy_user, proxy_pass))

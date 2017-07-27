@@ -11,7 +11,7 @@ use, but for demonstration purpose).
 
 ## Usage
 
-Script works only on Python3.
+This package works only on Python3.
 
 Scapy is a dependency. And Scapy requires **sudo** access for sending packets.
 When you run sudo, the virtualenv environment variables, aliases, functions, etc are not carried over. **So using virtualenv won't work.**
