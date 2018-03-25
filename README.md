@@ -5,9 +5,7 @@ Find proxy credentials of users under same gateway/router.
 The idea is to perform arp spoofing and then extract the proxy
 credentials from the headers of intercepted packets.
 
-You can also change the proxy password if you're in IITG because
-script was written for doing exactly that (Though not for malicious
-use, but for demonstration purpose).
+The inital [CONNECT](https://en.wikipedia.org/wiki/HTTP_tunnel#HTTP_CONNECT_method) request to proxy server is sent unsecured and this request has proxy-username and proxy-password in it. Capture those packets, parse them and get the credentials.
 
 ## Usage
 
