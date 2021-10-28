@@ -1,4 +1,4 @@
-# Mr. Toot      ༼∵༽ ༼⍨༽ ༼⍢༽ ༼⍤༽
+# Mr. Toot
 
 Find proxy credentials of users under same gateway/router.
 
